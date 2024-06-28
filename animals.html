@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #222;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            border: 10px solid wheat;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* .box {
+            transition: all 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.2);
+        } */
+
+        .box{
+            overflow: hidden;
+        }
+        .box img{
+            transition: all 0.3s;
+        }
+        .box img:hover{
+            transform: scale(1.2);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box ani01"><img src="img/animal01.png" alt="ani01"></div>
+        <div class="box ani02"><img src="img/animal02.png" alt="ani02"></div>
+        <div class="box ani03"><img src="img/animal03.png" alt="ani03"></div>
+        <div class="box ani04"><img src="img/animal04.png" alt="ani04"></div>
+        <div class="box ani05"><img src="img/animal05.png" alt="ani05"></div>
+        <div class="box ani06"><img src="img/animal06.png" alt="ani06"></div>
+        <div class="box ani07"><img src="img/animal07.png" alt="ani07"></div>
+        <div class="box ani08"><img src="img/animal08.png" alt="ani08"></div>
+        <div class="box ani09"><img src="img/animal09.png" alt="ani09"></div>
+        <div class="box ani10"><img src="img/animal10.png" alt="ani10"></div>
+        <div class="box ani11"><img src="img/animal11.png" alt="ani11"></div>
+        <div class="box ani12"><img src="img/animal12.png" alt="ani12"></div>
+    </div><!-- wrap -->
+</body>
+
+</html>

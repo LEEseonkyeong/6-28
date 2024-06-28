@@ -1,14 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .list01 {
+            width: 1200px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid gray;
+            display: flex;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .list01 li {}
+
+        .list01 li a {
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            display: block;
+            padding: 10px 30px;
+            background-color: aquamarine;
+        }
+
+        .list01 li:nth-child(1) {
+            order: 3;
+        }
+
+        .list01 li:nth-child(2) {
+            order: 2;
+        }
+
+        .list01 li:nth-child(3) {
+            order: 4;
+        }
+
+        .list01 li:nth-child(4) {
+            order: 5;
+        }
+
+        .list01 li:nth-child(5) {
+            order: 1;
+        }
+
+
+        .list02 {
+            width: 500px;
+            height: 600px;
+            border: 1px solid gray;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            /* 구조를 flex로 바꿨을때는 무조건 align-items로 정렬한다. */
+        }
+
+        .list02 li {}
+
+        .list02 li a {
+            width: 200px;
+            display: block;
+            padding: 10px 30px;
+            background-color: cadetblue;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .list03 {
+            width: 1000px;
+            height: 500px;
+            margin: 100px auto;
+            border: 1px solid gray;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+
+        }
+
+        .list03 li {}
+
+        .list03 li a {
+            display: block;
+            width: 300px;
+            height: 100px;
+            background-color: chocolate;
+            text-align: center;
+        }
+
+
+
+
+        .wrap {
+            width: 1200px;
+            margin: 0 auto;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: aquamarine;
+            order: 1;
+        }
+
+        aside {
+            width: 30%;
+            height: 600px;
+            background-color: blueviolet;
+            order: 3;
+        }
+
+        section {
+            width: 70%;
+            background-color: cornflowerblue;
+            order: 2;
+
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: crimson;
+            order: 4;
+        }
     </style>
 </head>
+
 <body>
     <ul class="list01">
         <li><a href="#">menu01</a></li>
@@ -17,5 +163,29 @@
         <li><a href="#">menu04</a></li>
         <li><a href="#">menu05</a></li>
     </ul>
+
+    <ul class="list02">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+
+    <ul class="list03">
+        <li><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+        <li><a href="#">menu04</a></li>
+        <li><a href="#">menu05</a></li>
+    </ul>
+
+    <div class="wrap">
+        <header>사이트제목</header>
+        <aside>사이드바</aside>
+        <section>본문</section>
+        <footer>푸터</footer>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+
+        .wrap {
+            margin: 50px;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 200px auto 200px;
+            grid-template-areas:
+                "header header header"
+                "side1 content side2"
+                "footer footer footer"
+            ;
+        }
+
+        .box {
+            background-color: #444;
+            border-radius: 10px;
+            color: wheat;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo a {
+            border: 1px solid blanchedalmond;
+        }
+
+        .nav {
+            border: 1px solid red;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .main li {}
+
+        .main li a {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .side1 {
+            grid-area: side1;
+        }
+
+        .side2 {
+            grid-area: side2;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="box header">
+            <h1 class="logo"><a href="#">logo</a></h1>
+
+            <nav class="nav">
+                <ul class="main">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </nav>
+        </header><!-- header -->
+
+        <aside class="box side1">side bar1</aside>
+        <section class="box content"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente tempore
+            consectetur odit dolorem enim veritatis explicabo voluptas officia facere alias aspernatur facilis non autem
+            similique, esse assumenda error ipsam? Minima. dolor sit amet consectetur adipisicing elit. Sapiente tempore
+            consectetur odit dolorem enim veritatis explicabo voluptas officia facere alias aspernatur facilis non autem
+            similique, esse assumenda error ipsam? Minima.Sapiente tempore consectetur odit dolorem enim veritatis
+            explicabo voluptas officia facere alias aspernatur facilis non autem
+            similique, esse assumenda error ipsam? Minima.
+        </section><!-- content -->
+        <aside class="box side2">side bar2</aside>
+
+        <footer class="box footer">footer</footer>
+    </div>
+</body>
+
+</html>
